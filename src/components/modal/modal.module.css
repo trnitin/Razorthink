@@ -1,0 +1,43 @@
+.Modal {
+    position: fixed;
+    z-index: 1050;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px black;
+    padding: 10px;
+    max-height:100vh;
+    top:1vh;
+    box-sizing: border-box;
+    border-radius:3px;
+    transition:  all .45s ease-in-out ;
+}
+.modalbutton{
+    width: 80px;
+    padding: 9px;
+    border: none;
+    background-color: #1976d2;
+    color: white;
+    border-radius: 3px;
+}
+.modalbutton:hover{
+    box-shadow: rgba(125, 112, 112, 0.71) 0px 3px 3px -2px, rgb(59 70 121 / 64%) 0px 3px 4px 0px, rgb(215 210 210) 0px 1px 8px 0px;
+}
+
+@media (min-width: 600px) {
+    .Modal {
+        width: 60vw;
+        left: 20vw;
+    }
+}
+@media (min-width: 600px) and (max-width:700px) {
+    .Modal {
+        width: 50vw;
+        left: calc(50% - 25vw);
+    }
+}
+@media (max-width: 600px) {
+    .Modal {
+        width: 70vw;
+        left: 15%;
+    }
+}

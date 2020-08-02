@@ -1,0 +1,1 @@
+export const GET_ALL_IMG = 'GET_ALL_IMG'
